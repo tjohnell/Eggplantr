@@ -38,7 +38,7 @@ parser.add_argument('--rate', type=float, help='Rate of eggplantation')
 
 args = parser.parse_args()
 
-users = [x.strip for x in args.u.split(',')]
+users = [x.strip() for x in args.u.split(',')]
 eggplanter = Eggplanter(args.t, users, args.rate)
 
 eggplanter.listen()
