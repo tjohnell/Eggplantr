@@ -8,7 +8,7 @@ class Eggplanter:
         self.users = users
         self.client = SlackClient(token)
         self.rate = rate
-	if self.rate is None:
+        if self.rate is None:
             self.rate = .5
 
     def listen(self):
